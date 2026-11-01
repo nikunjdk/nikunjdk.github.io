@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nikunj Das Kasat</title>
+<style>
+:root { --ink:#0b0b0b; --sec:#52514e; --rule:#d9d8d3; --blue:#2a78d6; --tile:#f0efec; --bg:#fff }
+@media (prefers-color-scheme: dark) { :root { --ink:#f0efec; --sec:#c3c2b7; --rule:#3a3a37; --blue:#3987e5; --tile:#262624; --bg:#1a1a19 } }
+* { box-sizing:border-box; margin:0; padding:0 }
+body { background:var(--bg); color:var(--ink); font:17px/1.5 Arial, Helvetica, sans-serif; padding:32px 20px 48px }
+main { max-width:600px; margin:0 auto }
+h1 { font-size:32px; line-height:1.15 }
+.lead { color:var(--sec); margin-top:6px }
+.links { display:grid; gap:10px; margin:24px 0 32px }
+.links a { display:block; padding:14px 16px; border-radius:6px; background:var(--blue); color:#fff; font-weight:700; text-align:center; text-decoration:none }
+.links a.alt { background:var(--tile); color:var(--ink) }
+h2 { font-size:20px; margin-bottom:6px; padding-top:18px; border-top:1px solid var(--rule) }
+ul { margin:10px 0 0 20px } li { margin-bottom:6px }
+footer { color:var(--sec); font-size:14px; margin-top:22px }
+</style></head>
+<body><main>
+<h1>Nikunj Das Kasat</h1>
+<p class="lead">MISM at Carnegie Mellon, Heinz College. I take AI systems into production, find what's actually wrong, fix it, and explain the impact.</p>
+<nav class="links">
+<a href="resume.pdf">Resume (PDF)</a>
+<a href="https://www.linkedin.com/in/nikunj-das-kasat/">LinkedIn</a>
+<a class="alt" href="mailto:nikunjdaskasat@cmu.edu">nikunjdaskasat@cmu.edu</a>
+</nav>
+<h2>From Model to Production</h2>
+<p>A movie recommender serving 580K requests a day on one 4-vCPU VM. I own serving, deployment, retraining automation and operations on a four-person team.</p>
+<ul>
+<li>Zero-downtime blue/green deploys with smoke tests and automatic switch-back</li>
+<li>A quality gate that refused a retrained model, blocking a 63% drop in ranking quality</li>
+<li>Traced a silent drop in personalization to rate limits on a user API</li>
+</ul>
+<footer>Team project, 17-645 Machine Learning in Production, CMU. Traffic comes from the course's simulated streaming service.</footer>
+</main></body></html>
